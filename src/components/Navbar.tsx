@@ -1,16 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
 
 export const Navbar = () => {
+  // Initialize to false for SSR consistency.
+  // The transition to 'nav-glass' will happen after mount if scrolled.
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
+    // This code only runs on the client after mount
     const handleScroll = () => {
+      // Only access window on the client
       setIsScrolled(window.scrollY > 10);
     };
+
+    // Set initial state correctly on client mount based on current scroll position
+    handleScroll(); 
+    
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, []); // Empty dependency array means run once on mount and once on unmount
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'nav-glass h-12' : 'bg-transparent h-16'}`}>
