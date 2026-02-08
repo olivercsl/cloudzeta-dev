@@ -23,7 +23,7 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           className="text-xl md:text-2xl font-medium text-tx-primary mb-10 text-balance max-w-2xl mx-auto"
         >
-          High-performance connectivity for China and consolidated billing for better cash flow.
+          High-performance connectivity for China and streamlined cloud procurement.
         </motion.p>
         
         {/* Links */}

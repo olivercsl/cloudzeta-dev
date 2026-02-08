@@ -11,8 +11,8 @@ const tiles = [
   },
   {
     span: "md:col-span-1",
-    title: "AWS Consolidated Billing",
-    desc: "Improve cash flow with unified procurement. Access competitive rates and simplified account management.",
+    title: "AWS Procurement",
+    desc: "Simplify your cloud spend. We handle the accounts and invoicing, giving you a single, clear bill with local support.",
     icon: Activity,
   },
   {
