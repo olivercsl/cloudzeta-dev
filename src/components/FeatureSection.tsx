@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+import { ChinaNetworkVisual } from './visuals/ChinaNetworkVisual';
+
 export const FeatureSection = () => {
   return (
     <section className="py-32 px-6 overflow-hidden">
@@ -41,28 +43,7 @@ export const FeatureSection = () => {
             viewport={{ once: true }}
             className="relative h-[500px] bg-surface rounded-3xl overflow-hidden shadow-2xl border border-black/5"
           >
-             {/* Abstract Map Visual */}
-             <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-white"></div>
-             <div className="absolute inset-0 flex items-center justify-center">
-                <div className="relative w-3/4 h-3/4">
-                  {/* Decorative Elements simulating a network map */}
-                  <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-blue-500 rounded-full animate-ping"></div>
-                  <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-blue-500 rounded-full"></div>
-                  
-                  <div className="absolute bottom-1/3 right-1/4 w-4 h-4 bg-indigo-500 rounded-full"></div>
-                  
-                  {/* Connection Line */}
-                  <svg className="absolute inset-0 w-full h-full pointer-events-none">
-                    <path d="M100 150 Q 250 50 350 250" stroke="url(#gradient-line)" strokeWidth="4" fill="none" strokeDasharray="10 10" className="animate-pulse" />
-                    <defs>
-                      <linearGradient id="gradient-line" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="0%" stopColor="#3b82f6" />
-                        <stop offset="100%" stopColor="#6366f1" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                </div>
-             </div>
+             <ChinaNetworkVisual />
           </motion.div>
         </div>
 
