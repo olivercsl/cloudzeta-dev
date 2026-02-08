@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Navbar } from '../components/Navbar';
+import { Hero } from '../components/Hero';
+import { BentoGrid } from '../components/BentoGrid';
+---
+
+<Layout title="Cloudzeta Solutions | Engineered Cloud Delivery">
+    <Navbar client:load />
+	<main>
+		<Hero client:load />
+        <div id="services">
+            <BentoGrid client:visible />
+        </div>
+	</main>
+</Layout>
