@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
+import { LogoStrip } from '../components/LogoStrip';
+import { FeatureSection } from '../components/FeatureSection';
 import { BentoGrid } from '../components/BentoGrid';
 ---
 
@@ -9,6 +11,8 @@ import { BentoGrid } from '../components/BentoGrid';
     <Navbar client:load />
 	<main>
 		<Hero client:load />
+        <LogoStrip client:visible />
+        <FeatureSection client:visible />
         <div id="services">
             <BentoGrid client:visible />
         </div>
