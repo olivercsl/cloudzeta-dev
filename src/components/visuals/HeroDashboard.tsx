@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-export const HeroVisual = () => {
+export const HeroDashboard = () => {
   return (
     <div className="relative w-full aspect-[4/3] flex items-center justify-center">
       
