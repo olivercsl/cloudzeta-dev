@@ -48,7 +48,7 @@ export const FinanceSecurityVisual = () => {
            </div>
         </motion.div>
 
-        {/* 2. Top Right: Monitoring Graph */}
+        {/* 2. Top Right: SOC Architecture Card */}
         <motion.div 
            initial={{ x: 20, opacity: 0 }}
            animate={{ x: 0, opacity: 1 }}
@@ -56,17 +56,18 @@ export const FinanceSecurityVisual = () => {
            className="absolute top-[10%] right-[5%] bg-white/80 backdrop-blur border border-white/60 shadow-lg rounded-xl p-4 w-48 z-10"
         >
            <div className="flex justify-between items-center mb-2">
-              <div className="text-[10px] font-bold text-gray-400 uppercase">Threat Monitor</div>
-              <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
+              <div className="text-[10px] font-bold text-gray-400 uppercase">SOC Architecture</div>
+              <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
            </div>
-           {/* Fake Line Graph */}
-           <div className="h-12 w-full flex items-end gap-1">
-              {[20, 15, 25, 10, 15, 12, 18, 10, 5, 8].map((h, i) => (
-                 <div key={i} className="flex-1 bg-emerald-100 rounded-sm" style={{ height: `${h}%` }}></div>
-              ))}
+           {/* Schematic Lines */}
+           <div className="h-12 w-full flex items-center justify-center relative">
+              <div className="absolute inset-0 border border-dashed border-emerald-200 rounded-lg"></div>
+              <div className="w-8 h-8 bg-emerald-100 rounded-md flex items-center justify-center">
+                 <svg className="w-4 h-4 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
            </div>
            <div className="mt-2 text-[10px] text-gray-500 text-center bg-gray-50 rounded py-1">
-              No anomalies detected
+              Ready for Handover
            </div>
         </motion.div>
 

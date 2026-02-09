@@ -39,8 +39,8 @@ export const FinanceSecuritySection = () => {
                 <svg className="w-3.5 h-3.5 text-emerald-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-tx-primary">24/7 Monitoring</h4>
-                <p className="text-tx-secondary">Proactive threat detection and infrastructure oversight to catch issues before they escalate.</p>
+                <h4 className="text-lg font-semibold text-tx-primary">SOC Architecture & Design</h4>
+                <p className="text-tx-secondary">We build and deploy your Security Operations Center using cloud-native tools, handing over full ownership to your team.</p>
               </div>
             </li>
             <li className="flex gap-4">
