@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { Navbar } from '../components/Navbar';
 import { Hero } from '../components/Hero';
 import { LogoStrip } from '../components/LogoStrip';
+import { FinanceSecuritySection } from '../components/FinanceSecuritySection';
 import { FeatureSection } from '../components/FeatureSection';
 import { BentoGrid } from '../components/BentoGrid';
 import { TrustSection } from '../components/TrustSection';
@@ -14,6 +15,7 @@ import { ContactSection } from '../components/ContactSection';
 	<main>
 		<Hero client:load />
         <LogoStrip client:visible />
+        <FinanceSecuritySection client:visible />
         <FeatureSection client:visible />
         <TrustSection client:visible />
         <div id="services">
