@@ -26,7 +26,7 @@ export const FeatureSection = () => {
               Ensure your global platforms—trading apps, exam portals, and SaaS tools—perform flawlessly for users in Mainland China. 
             </p>
             <ul className="space-y-4 mb-8">
-              {['Zero packet loss', 'Low latency routing', 'Regulatory compliance'].map((item, i) => (
+              {['Very low packet loss', 'Low latency routing', 'Regulatory compliance'].map((item, i) => (
                 <li key={i} className="flex items-center gap-3 text-tx-primary font-medium">
                   <svg className="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                   {item}

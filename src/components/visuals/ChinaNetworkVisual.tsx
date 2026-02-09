@@ -69,7 +69,7 @@ export const ChinaNetworkVisual = () => {
         <div className="h-14 bg-white flex items-center justify-between px-6">
            <div className="flex flex-col">
              <span className="text-[10px] text-gray-400 font-semibold uppercase">Packet Loss</span>
-             <span className="text-sm font-bold text-gray-800">0.01%</span>
+             <span className="text-sm font-bold text-gray-800">Low</span>
            </div>
            <div className="h-8 w-[1px] bg-gray-100"></div>
            <div className="flex flex-col">
@@ -78,8 +78,8 @@ export const ChinaNetworkVisual = () => {
            </div>
            <div className="h-8 w-[1px] bg-gray-100"></div>
            <div className="flex flex-col">
-             <span className="text-[10px] text-gray-400 font-semibold uppercase">Uptime</span>
-             <span className="text-sm font-bold text-emerald-600">100%</span>
+             <span className="text-[10px] text-gray-400 font-semibold uppercase">Connection</span>
+             <span className="text-sm font-bold text-emerald-600">Stable</span>
            </div>
         </div>
       </div>
