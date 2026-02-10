@@ -6,7 +6,7 @@ export const GlobalMapVisual = () => {
     <div className="relative w-full aspect-video md:h-[500px] md:aspect-auto flex flex-col md:block items-center justify-center overflow-visible">
       
       {/* 1. Map Container (Scales with width) */}
-      <div className="relative w-full h-full min-h-[300px]">
+      <div className="relative w-full h-full min-h-[250px] md:min-h-[300px]">
           {/* Map SVG */}
           <svg className="w-full h-full text-slate-300" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid slice" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
              {/* Map Paths */}
