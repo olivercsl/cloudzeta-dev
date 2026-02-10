@@ -22,8 +22,8 @@ export const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'nav-glass h-12' : 'bg-transparent h-16'}`}>
       <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
-        <a href="/" className="font-semibold text-lg tracking-tight text-tx-primary">
-          Cloudzeta
+        <a href="/" className="flex items-center gap-2">
+          <img src="/logo-full.svg" alt="Cloudzeta" className="h-8 w-auto" />
         </a>
         
         <div className="hidden md:flex items-center gap-8 text-xs font-medium text-tx-primary/80">
