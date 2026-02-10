@@ -5,17 +5,28 @@ export const GlobalMapVisual = () => {
   return (
     <div className="relative w-full aspect-video md:h-[500px] md:aspect-auto flex flex-col md:block items-center justify-center overflow-visible">
       
-      {/* 1. Map Container (Scales with width) */}
-      <div className="relative w-full h-full min-h-[250px] md:min-h-[300px]">
-          {/* Map SVG */}
-          <svg className="w-full h-full text-slate-300" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid slice" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-             {/* Map Paths */}
-             <path d="M150,100 C150,100 100,120 100,150 C100,180 150,200 150,250 C150,300 200,400 250,450 C250,450 300,350 300,300 C300,250 250,250 250,200 C250,150 350,100 350,100" />
-             <path d="M450,150 C450,150 450,250 480,300 C510,350 550,400 550,400 C550,400 600,300 600,250 C600,200 550,200 550,150 C550,100 450,100 450,150" />
-             <path d="M650,150 C650,150 700,200 750,200 C800,200 850,150 850,150 C850,150 800,100 750,100 C700,100 650,150 650,150" />
-             <path d="M800,350 C800,350 820,380 850,380 C880,380 900,350 900,350 C900,350 850,330 800,350" />
-             <path d="M350,100 C400,80 450,100 450,100" opacity="0.5" strokeDasharray="4 4" />
-             <path d="M600,150 C620,150 650,150 650,150" opacity="0.5" strokeDasharray="4 4" />
+      {/* 1. Dotted Map Container */}
+      <div className="relative w-full h-full min-h-[300px]">
+          {/* Map SVG (Dots) */}
+          <svg className="w-full h-full text-slate-200" viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid slice" fill="currentColor">
+             {/* North America */}
+             <circle cx="200" cy="150" r="3" /> <circle cx="230" cy="160" r="3" /> <circle cx="260" cy="140" r="3" />
+             <circle cx="180" cy="180" r="3" /> <circle cx="220" cy="200" r="3" /> <circle cx="270" cy="180" r="3" />
+             <circle cx="240" cy="250" r="3" /> <circle cx="280" cy="350" r="3" /> <circle cx="300" cy="400" r="3" />
+             
+             {/* Europe */}
+             <circle cx="480" cy="140" r="3" /> <circle cx="510" cy="150" r="3" /> <circle cx="540" cy="130" r="3" />
+             <circle cx="500" cy="180" r="3" /> <circle cx="530" cy="170" r="3" />
+             
+             {/* Asia */}
+             <circle cx="680" cy="160" r="3" /> <circle cx="730" cy="180" r="3" /> <circle cx="780" cy="150" r="3" />
+             <circle cx="820" cy="170" r="3" /> <circle cx="850" cy="200" r="3" /> 
+             
+             {/* Australia */}
+             <circle cx="850" cy="350" r="3" /> <circle cx="890" cy="360" r="3" /> <circle cx="870" cy="390" r="3" />
+             
+             {/* Africa */}
+             <circle cx="500" cy="250" r="3" /> <circle cx="550" cy="300" r="3" /> <circle cx="520" cy="350" r="3" />
           </svg>
 
           {/* Connection Lines (Overlay SVG) */}
@@ -27,15 +38,15 @@ export const GlobalMapVisual = () => {
                 <stop offset="100%" stopColor="#60a5fa" stopOpacity="1" />
               </linearGradient>
             </defs>
-            <RoutePath start={{x: 250, y: 200}} end={{x: 750, y: 150}} delay={0} />
-            <RoutePath start={{x: 480, y: 150}} end={{x: 750, y: 150}} delay={1} />
-            <RoutePath start={{x: 850, y: 350}} end={{x: 750, y: 150}} delay={2} />
-            <RoutePath start={{x: 850, y: 150}} end={{x: 750, y: 150}} delay={0.5} />
+            <RoutePath start={{x: 230, y: 160}} end={{x: 730, y: 180}} delay={0} /> {/* US -> China */}
+            <RoutePath start={{x: 510, y: 150}} end={{x: 730, y: 180}} delay={1} /> {/* UK -> China */}
+            <RoutePath start={{x: 850, y: 350}} end={{x: 730, y: 180}} delay={2} /> {/* AUS -> China */}
+            <RoutePath start={{x: 820, y: 170}} end={{x: 730, y: 180}} delay={0.5} /> {/* JP -> China */}
           </svg>
 
-          {/* Floating Nodes (Absolute positioned %) */}
+          {/* Floating Nodes */}
           {/* China Hub */}
-          <div className="absolute top-[30%] right-[25%] z-10 flex flex-col items-center">
+          <div className="absolute top-[36%] right-[27%] z-10 flex flex-col items-center">
              <div className="relative">
                 <div className="w-3 h-3 md:w-4 md:h-4 bg-blue-500 rounded-full shadow-lg shadow-blue-500/50 z-10 relative"></div>
                 <div className="absolute inset-0 bg-blue-400 rounded-full animate-ping opacity-75"></div>
@@ -45,10 +56,10 @@ export const GlobalMapVisual = () => {
              </div>
           </div>
 
-          <SourceNode label="US" x="25%" y="40%" />
-          <SourceNode label="UK" x="48%" y="30%" />
+          <SourceNode label="US" x="23%" y="32%" />
+          <SourceNode label="UK" x="51%" y="30%" />
           <SourceNode label="AUS" x="85%" y="70%" />
-          <SourceNode label="JP" x="85%" y="30%" />
+          <SourceNode label="JP" x="82%" y="34%" />
       </div>
 
       {/* 5. Metrics Card (Floating, responsive) */}
