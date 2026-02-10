@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import { ChinaDashboard } from './visuals/ChinaDashboard';
+import { GlobalBilling } from './visuals/GlobalBilling';
 
 export const FeatureSection = () => {
   return (
@@ -56,26 +57,7 @@ export const FeatureSection = () => {
             viewport={{ once: true }}
             className="order-2 md:order-1 relative h-[500px] bg-surface rounded-3xl overflow-hidden shadow-2xl border border-black/5"
           >
-             {/* Abstract Billing Visual */}
-             <div className="absolute inset-0 bg-gradient-to-bl from-gray-50 to-white"></div>
-             <div className="absolute inset-0 flex items-center justify-center">
-                {/* Stacked Cards representing invoices */}
-                <div className="relative w-64 h-80 bg-white rounded-xl shadow-xl border border-gray-100 p-6 transform rotate-6 translate-x-4"></div>
-                <div className="relative w-64 h-80 bg-white rounded-xl shadow-xl border border-gray-100 p-6 transform -rotate-3 -translate-x-4 -translate-y-4 absolute top-1/2 left-1/2 -ml-32 -mt-40 flex flex-col justify-between">
-                   <div className="space-y-4">
-                     <div className="h-4 w-1/3 bg-gray-200 rounded"></div>
-                     <div className="h-2 w-full bg-gray-100 rounded"></div>
-                     <div className="h-2 w-2/3 bg-gray-100 rounded"></div>
-                   </div>
-                   <div className="space-y-2">
-                     <div className="flex justify-between">
-                       <div className="h-2 w-16 bg-gray-100 rounded"></div>
-                       <div className="h-2 w-10 bg-green-100 rounded"></div>
-                     </div>
-                     <div className="h-10 w-full bg-tx-primary rounded-lg flex items-center justify-center text-white text-sm font-medium">Consolidated</div>
-                   </div>
-                </div>
-             </div>
+             <GlobalBilling />
           </motion.div>
 
           <motion.div 
@@ -91,12 +73,12 @@ export const FeatureSection = () => {
             <h2 className="text-4xl md:text-5xl font-semibold text-tx-primary mb-6">
               Unified Cloud Procurement.
             </h2>
-            <p className="text-xl text-tx-secondary leading-relaxed mb-8">
-              Consolidate your AWS, Azure, and Alibaba Cloud spend. We handle the complexity of multi-vendor billing so you get a single, clear invoice with local support.
+            <p class="text-xl text-tx-secondary leading-relaxed mb-8">
+              Consolidate your AWS, Azure, and Alibaba Cloud spend. We handle the complexity of multi-vendor billing so you get a single, clear invoice with expert remote support.
             </p>
-            <ul className="space-y-4 mb-8">
-              {['Single currency invoice', 'Local support team', 'Cost visibility'].map((item, i) => (
-                <li key={i} className="flex items-center gap-3 text-tx-primary font-medium">
+            <ul class="space-y-4 mb-8">
+              {['Single currency invoice', 'Expert remote support', 'Cost visibility'].map((item, i) => (
+                <li key={i} class="flex items-center gap-3 text-tx-primary font-medium">
                   <svg className="w-5 h-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                   {item}
                 </li>

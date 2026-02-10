@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-export const BillingVisual = () => {
+export const GlobalBilling = () => {
   return (
     <div className="relative w-full aspect-video md:h-[500px] md:aspect-auto flex items-center justify-center">
       
