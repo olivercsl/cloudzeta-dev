@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import { ChinaDashboard } from './visuals/ChinaDashboard';
-import { GlobalBilling } from './visuals/GlobalBilling';
+import { BillingTrends } from './visuals/BillingTrends';
 
 export const FeatureSection = () => {
   return (
@@ -57,7 +57,7 @@ export const FeatureSection = () => {
             viewport={{ once: true }}
             className="order-2 md:order-1 relative h-[500px] bg-surface rounded-3xl overflow-hidden shadow-2xl border border-black/5"
           >
-             <GlobalBilling />
+             <BillingTrends />
           </motion.div>
 
           <motion.div 
