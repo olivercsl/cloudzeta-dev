@@ -23,7 +23,7 @@ export const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'nav-glass h-12' : 'bg-transparent h-16'}`}>
       <div className="max-w-7xl mx-auto px-6 h-full flex items-center justify-between">
         <a href="/" className="flex items-center gap-2">
-          <img src="/logo-smart.svg" alt="Cloudzeta" className="h-9 w-auto" />
+          <img src="/logo-circuit.svg" alt="Cloudzeta" className="h-9 w-auto" />
           <span className="text-xl font-bold tracking-tight text-tx-primary">Cloudzeta</span>
         </a>
         
