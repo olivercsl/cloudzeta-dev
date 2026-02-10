@@ -47,15 +47,29 @@ export const ChinaDashboard = () => {
         </div>
 
         {/* Footer Stats */}
-        <div className="px-6 py-4 bg-gray-50 border-t border-gray-100 flex justify-between items-center">
-           <div className="flex flex-col">
-              <span className="text-[10px] font-bold text-gray-400 uppercase">Packet Loss</span>
-              <span className="text-xs font-bold text-gray-900">0.02% (Avg)</span>
+        <div className="px-6 py-4 bg-gray-50 border-t border-gray-100">
+           {/* Bandwidth Usage Graph */}
+           <div className="mb-3 flex justify-between items-center">
+              <span className="text-[10px] font-bold text-gray-400 uppercase">CEN Link Utilization</span>
+              <div className="flex gap-3">
+                 <span className="text-[10px] text-gray-500 font-medium">Peak: <span className="text-gray-900 font-bold">850 Mbps</span></span>
+                 <span className="text-[10px] text-gray-500 font-medium">Avg: <span className="text-gray-900 font-bold">420 Mbps</span></span>
+              </div>
            </div>
-           <div className="h-6 w-[1px] bg-gray-200"></div>
-           <div className="flex flex-col text-right">
-              <span className="text-[10px] font-bold text-gray-400 uppercase">Throughput</span>
-              <span className="text-xs font-bold text-gray-900">10 Gbps</span>
+           
+           <div className="relative h-16 w-full overflow-hidden">
+              <svg className="w-full h-full" viewBox="0 0 100 40" preserveAspectRatio="none">
+                 <defs>
+                    <linearGradient id="usageGrad" x1="0" y1="0" x2="0" y2="1">
+                       <stop offset="0%" stopColor="#3b82f6" stopOpacity="0.2" />
+                       <stop offset="100%" stopColor="#3b82f6" stopOpacity="0" />
+                    </linearGradient>
+                 </defs>
+                 {/* Area */}
+                 <path d="M0 40 L0 30 C10 25 20 35 30 20 C40 5 50 15 60 25 C70 35 80 10 90 15 L100 20 L100 40 Z" fill="url(#usageGrad)" />
+                 {/* Line */}
+                 <path d="M0 30 C10 25 20 35 30 20 C40 5 50 15 60 25 C70 35 80 10 90 15 L100 20" fill="none" stroke="#3b82f6" strokeWidth="1.5" strokeLinecap="round" />
+              </svg>
            </div>
         </div>
 
