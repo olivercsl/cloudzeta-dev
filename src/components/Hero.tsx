@@ -15,8 +15,8 @@ export const Hero = () => {
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
               className="text-5xl md:text-7xl font-semibold tracking-tight text-tx-primary mb-6 leading-[1.1]"
             >
-              Secure Cloud. <br />
-              <span className="text-tx-secondary">Engineered for Finance.</span>
+              Scale your AI Agents. <br />
+              <span className="text-purple-600">Not your bill.</span>
             </motion.h1>
 
             <motion.p 
@@ -25,7 +25,7 @@ export const Hero = () => {
               transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="text-xl md:text-2xl font-medium text-tx-primary mb-8 text-balance max-w-lg"
             >
-              Enterprise AWS solutions, streamlined procurement, and compliant global infrastructure.
+              High-performance Qwen3 tokens at a fraction of the cost. The perfect execution engine for your agentic workflows.
             </motion.p>
             
             {/* Links */}
