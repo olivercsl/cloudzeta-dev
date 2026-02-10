@@ -33,7 +33,7 @@ export const FeatureSection = () => {
                 </li>
               ))}
             </ul>
-            <a href="#china" className="text-blue-600 font-semibold hover:underline">Learn more about connectivity →</a>
+            <a href="#contact" className="text-blue-600 font-semibold hover:underline">Check Coverage & Latency →</a>
           </motion.div>
           
           <motion.div 
@@ -102,7 +102,7 @@ export const FeatureSection = () => {
                 </li>
               ))}
             </ul>
-            <a href="#billing" className="text-indigo-600 font-semibold hover:underline">Streamline your billing →</a>
+            <a href="#contact" className="text-indigo-600 font-semibold hover:underline">Get a Cost Audit →</a>
           </motion.div>
         </div>
 

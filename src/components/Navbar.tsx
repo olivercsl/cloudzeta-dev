@@ -30,7 +30,6 @@ export const Navbar = () => {
         <div className="hidden md:flex items-center gap-8 text-xs font-medium text-tx-primary/80">
           <a href="#services" className="hover:text-accent transition-colors">Services</a>
           <a href="#china" className="hover:text-accent transition-colors">China Access</a>
-          <a href="#governance" className="hover:text-accent transition-colors">Governance</a>
           <a href="#contact" className="px-3 py-1.5 bg-tx-primary text-white rounded-full hover:bg-tx-primary/90 transition-colors">
             Contact
           </a>
