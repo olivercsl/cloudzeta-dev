@@ -65,9 +65,9 @@ export const BillingVisual = () => {
               </div>
               <div className="text-right">
                  <div className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-lg text-xs font-bold mb-1 inline-block">
-                    Saved 15%
+                    Optimized Spend
                  </div>
-                 <div className="text-[10px] text-gray-400">vs Direct Billing</div>
+                 <div className="text-[10px] text-gray-400">via Architecture Review</div>
               </div>
            </div>
 
