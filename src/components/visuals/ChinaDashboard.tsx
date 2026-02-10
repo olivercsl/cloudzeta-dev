@@ -10,54 +10,51 @@ export const ChinaDashboard = () => {
          <div className="w-[80%] h-[80%] bg-gradient-to-tr from-blue-50/50 to-emerald-50/50 rounded-full blur-3xl opacity-60"></div>
       </div>
 
-      {/* Main Dashboard Card */}
+      {/* Main Dashboard - No Frame/Shadow Wrapper */}
       <motion.div 
         initial={{ y: 20, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative w-full max-w-lg bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden"
+        className="relative w-full max-w-lg flex flex-col gap-4"
       >
         
-        {/* Header */}
-        <div className="h-14 border-b border-gray-100 flex items-center justify-between px-6 bg-white/50 backdrop-blur-sm">
+        {/* Header - Floating */}
+        <div className="h-14 flex items-center justify-between px-6 bg-white/80 backdrop-blur-xl border border-white/60 shadow-lg rounded-2xl">
            <div className="flex items-center gap-3">
               <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xs shadow-md shadow-blue-200">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
               </div>
               <div>
-                <div className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider leading-none mb-0.5">Live Status</div>
+                <div className="text-[10px] font-semibold text-gray-400 uppercase tracking-wider leading-none mb-0.5">CEN Status</div>
                 <div className="text-sm font-bold text-gray-900 leading-none">Global Acceleration</div>
               </div>
            </div>
            <div className="flex items-center gap-2">
              <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
-             <span className="text-xs font-semibold text-emerald-600">Active</span>
+             <span className="text-xs font-semibold text-emerald-600">Operational</span>
            </div>
         </div>
 
-        {/* Route Table (Neutral, Qualitative) */}
-        <div className="p-2">
-           <div className="space-y-1">
-              <RouteRow from="US East" to="Shanghai" status="Optimized" />
-              <RouteRow from="Tokyo" to="Shanghai" status="Direct Path" />
-              <RouteRow from="Singapore" to="Shenzhen" status="Accelerated" />
-              <RouteRow from="London" to="Beijing" status="Optimized" />
-              <RouteRow from="Sydney" to="Guangzhou" status="Accelerated" />
-           </div>
+        {/* Route Table - Floating Rows */}
+        <div className="space-y-2">
+           <RouteRow from="US East" to="Shanghai" status="Premium" />
+           <RouteRow from="Tokyo" to="Shanghai" status="Premium" />
+           <RouteRow from="Singapore" to="Shenzhen" status="Premium" />
+           <RouteRow from="London" to="Beijing" status="Premium" />
+           <RouteRow from="Sydney" to="Guangzhou" status="Premium" />
         </div>
 
-        {/* Footer Stats */}
-        <div className="px-6 py-4 bg-gray-50 border-t border-gray-100">
+        {/* Footer Stats - Floating */}
+        <div className="px-6 py-4 bg-white/80 backdrop-blur-xl border border-white/60 shadow-lg rounded-2xl">
            {/* Bandwidth Usage Graph */}
            <div className="mb-3 flex justify-between items-center">
               <span className="text-[10px] font-bold text-gray-400 uppercase">Network Utilization</span>
               <div className="flex gap-3">
-                 <span className="text-[10px] text-gray-500 font-medium">Peak: <span className="text-gray-900 font-bold">High</span></span>
                  <span className="text-[10px] text-gray-500 font-medium">Load: <span className="text-gray-900 font-bold">Balanced</span></span>
               </div>
            </div>
            
-           <div className="relative h-16 w-full overflow-hidden">
+           <div className="relative h-12 w-full overflow-hidden">
               <svg className="w-full h-full" viewBox="0 0 100 40" preserveAspectRatio="none">
                  <defs>
                     <linearGradient id="usageGrad" x1="0" y1="0" x2="0" y2="1">
@@ -79,7 +76,7 @@ export const ChinaDashboard = () => {
 };
 
 const RouteRow = ({ from, to, status }: { from: string, to: string, status: string }) => (
-  <div className="group flex items-center justify-between p-3 rounded-xl hover:bg-gray-50 transition-colors">
+  <div className="group flex items-center justify-between p-3 bg-white/60 backdrop-blur-md border border-white/40 shadow-sm rounded-xl hover:bg-white/80 transition-colors">
      <div className="flex items-center gap-3">
         <div className="flex items-center gap-2 w-28">
            <div className="w-1.5 h-1.5 rounded-full bg-gray-300"></div>
@@ -87,7 +84,7 @@ const RouteRow = ({ from, to, status }: { from: string, to: string, status: stri
         </div>
         
         {/* Animated Arrow */}
-        <div className="flex flex-col items-center w-12 opacity-30 group-hover:opacity-100 transition-opacity">
+        <div className="flex flex-col items-center w-8 opacity-30 group-hover:opacity-100 transition-opacity">
            <svg className="w-4 h-4 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
            </svg>
@@ -100,7 +97,7 @@ const RouteRow = ({ from, to, status }: { from: string, to: string, status: stri
      </div>
 
      <div className="flex items-center gap-3">
-        <span className="text-xs font-bold text-slate-500 bg-slate-100 px-2 py-1 rounded">{status}</span>
+        <span className="text-[10px] font-bold text-amber-600 bg-amber-50 px-2 py-1 rounded border border-amber-100 uppercase tracking-wider">{status}</span>
         <div className="w-5 h-5 rounded-full bg-emerald-100 flex items-center justify-center">
            <svg className="w-3 h-3 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
