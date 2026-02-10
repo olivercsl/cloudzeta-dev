@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import { ChinaMap } from './visuals/ChinaMap';
+import { ChinaDashboard } from './visuals/ChinaDashboard';
 
 export const FeatureSection = () => {
   return (
@@ -43,7 +43,7 @@ export const FeatureSection = () => {
             viewport={{ once: true }}
             className="relative h-[500px] bg-surface rounded-3xl overflow-hidden shadow-2xl border border-black/5"
           >
-             <ChinaMap />
+             <ChinaDashboard />
           </motion.div>
         </div>
 
