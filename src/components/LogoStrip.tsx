@@ -2,11 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const logos = [
-  { name: "AWS", url: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" },
-  { name: "Alibaba Cloud", url: "https://cloudzeta.solutions/assets/alibaba_l.png" }, 
-  { name: "Microsoft", url: "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" },
-  { name: "Cloudflare", url: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Cloudflare_Logo.svg" },
-  { name: "Tencent Cloud", url: "https://cloudzeta.solutions/assets/tencent_l.png" }
+  { name: "AWS", url: "/assets/aws.png" },
+  { name: "Alibaba Cloud", url: "/assets/alibaba_l.png" },
+  { name: "Microsoft", url: "/assets/microsoft.png" },
+  { name: "Cloudflare", url: "/assets/cloudflare.png" },
+  { name: "Tencent Cloud", url: "/assets/tencent_l.png" }
 ];
 
 export const LogoStrip = () => {
