@@ -16,13 +16,13 @@ export const TrustSection = () => {
             className="text-center md:text-left p-6 rounded-2xl bg-white/50 border border-white/60 shadow-sm"
           >
             <div className="text-4xl font-bold text-tx-primary mb-3 tracking-tight">
-              10+ Years
+              20 Years
             </div>
             <div className="text-sm font-semibold text-gray-900 uppercase tracking-wide mb-2">
-              Engineering Excellence
+              Engineering Heritage
             </div>
             <p className="text-sm text-tx-secondary leading-relaxed">
-              Delivering critical financial infrastructure and cross-border connectivity since 2014.
+              Established 2023. Backed by two decades of delivering critical financial infrastructure.
             </p>
           </motion.div>
 
