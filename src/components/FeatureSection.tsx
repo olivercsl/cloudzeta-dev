@@ -74,10 +74,10 @@ export const FeatureSection = () => {
               Unified Cloud Procurement.
             </h2>
             <p class="text-xl text-tx-secondary leading-relaxed mb-8">
-              Consolidate your AWS, Azure, and Alibaba Cloud spend. We handle the complexity of multi-vendor billing so you get a single, clear invoice with expert support.
+              Consolidate your AWS, Azure, and Alibaba Cloud spend. We simplify multi-vendor billing while actively optimizing your architecture to drive down costs.
             </p>
             <ul class="space-y-4 mb-8">
-              {['Single currency invoice', 'Expert support', 'Cost visibility'].map((item, i) => (
+              {['Smart cost savings', 'Single currency invoice', 'Better cost visibility'].map((item, i) => (
                 <li key={i} class="flex items-center gap-3 text-tx-primary font-medium">
                   <svg className="w-5 h-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                   {item}

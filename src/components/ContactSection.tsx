@@ -6,10 +6,10 @@ export const ContactSection = () => {
       <div className="max-w-4xl mx-auto px-6 text-center">
         
         <h2 className="text-3xl md:text-4xl font-semibold text-tx-primary mb-6">
-          Ready to optimize your cloud?
+          Secure. Intelligent. Optimized.
         </h2>
         <p className="text-xl text-tx-secondary mb-10 max-w-2xl mx-auto">
-          Whether you need connectivity in China or a consolidated billing structure, our team is ready to help.
+          Whether you need to drive down cloud costs or deploy finance-grade infrastructure, our team is ready to engineer the right solution.
         </p>
 
         <div className="flex flex-col md:flex-row justify-center gap-6 mb-16">
