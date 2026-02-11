@@ -21,7 +21,7 @@ const tiles = [
   {
     span: "md:col-span-2",
     title: "Go China Solutions",
-    desc: "Seamless connectivity into Mainland China via Alibaba Cloud CEN & Tencent AIA. We handle the technical complexity of cross-border routing and ICP filing compliance.",
+    desc: "Seamless China connectivity via Alibaba Cloud CEN & China fibre routes. We handle the technical complexity of cross-border routing and ICP filing compliance.",
     icon: Globe,
   },
   // 4. Managed Services (Smaller Scope - 1 col)

@@ -24,7 +24,7 @@ export const FeatureSection = () => {
               China Connectivity, <br/>Solved.
             </h2>
             <p className="text-xl text-tx-secondary leading-relaxed mb-8">
-              Ensure your global platforms—trading apps, exam portals, and SaaS tools—perform flawlessly for users in Mainland China. 
+              Ensure your global platforms—trading apps, exam portals, and SaaS tools—perform flawlessly via our premium China fibre (CEN) backbone. Low latency China connectivity, solved. 
             </p>
             <ul className="space-y-4 mb-8">
               {['Very low packet loss', 'Low latency routing', 'Regulatory compliance'].map((item, i) => (
