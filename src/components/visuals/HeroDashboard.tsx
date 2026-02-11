@@ -56,13 +56,13 @@ export const HeroDashboard = () => {
               {/* Cloudzeta / Qwen */}
               <div>
                  <div className="flex justify-between text-xs font-medium text-gray-900 mb-1">
-                    <span className="text-purple-700 font-bold">Cloudzeta Qwen3</span>
-                    <span className="text-purple-700 font-bold">$0.40</span>
+                    <span className="text-purple-700 font-bold">Cloudzeta Qwen3 Max</span>
+                    <span className="text-purple-700 font-bold">$1.20</span>
                  </div>
                  <div className="h-3 w-full bg-purple-50 rounded-full overflow-hidden">
                     <motion.div 
                       initial={{ width: 0 }}
-                      whileInView={{ width: "13%" }}
+                      whileInView={{ width: "40%" }}
                       transition={{ duration: 1, delay: 0.5 }}
                       className="h-full bg-gradient-to-r from-purple-500 to-indigo-500"
                     />
@@ -72,7 +72,7 @@ export const HeroDashboard = () => {
 
            <div className="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between">
               <span className="text-xs text-gray-500">Savings</span>
-              <span className="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-lg">87% Lower Cost</span>
+              <span className="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-lg">60% Lower Cost</span>
            </div>
         </motion.div>
 
