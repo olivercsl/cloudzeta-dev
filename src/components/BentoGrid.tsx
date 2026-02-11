@@ -1,48 +1,55 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShieldCheck, Zap, Globe, Server, Activity, Lock, Cloud } from 'lucide-react';
+import { ShieldCheck, Zap, Globe, Server, Activity, Lock, Cloud, Brain, Database, Cpu } from 'lucide-react';
 
 const tiles = [
+  // 1. AWS (Flagship - 2 col)
   {
     span: "md:col-span-2",
     title: "AWS Cloud Solutions",
-    desc: "Full access to AWS services at competitive rates. We handle procurement, account setup, and ongoing local support.",
+    desc: "Full access to AWS services at competitive rates. We handle procurement, account setup, and ongoing local support as your Advanced Partner.",
     icon: Server,
   },
+  // 2. AI (High Value - 1 col)
   {
     span: "md:col-span-1",
-    title: "Microsoft Licensing",
-    desc: "Save on M365 and Azure. Right-fit licensing for your team size.",
-    icon: Activity,
+    title: "Smart Token Sourcing",
+    desc: "Stop overpaying for intelligence. Access top-tier model performance at wholesale market rates.",
+    icon: Brain,
   },
-  {
-    span: "md:col-span-1",
-    title: "Cloudflare",
-    desc: "Enterprise-grade protection and performance for your web assets.",
-    icon: ShieldCheck,
-  },
+  // 3. Go China (Major Differentiator - 2 col)
   {
     span: "md:col-span-2",
-    title: "China Connect Solution",
-    desc: "Deliver digital content and enable smooth collaboration across China. Built with Alibaba Cloud CEN & Tencent AIA.",
+    title: "Go China Solutions",
+    desc: "Seamless connectivity into Mainland China via Alibaba Cloud CEN & Tencent AIA. We handle the technical complexity of cross-border routing and ICP filing compliance.",
     icon: Globe,
   },
+  // 4. Managed Services (Smaller Scope - 1 col)
   {
     span: "md:col-span-1",
-    title: "Fortinet",
-    desc: "Secure networking hardware and software licensing.",
+    title: "Managed Infrastructure",
+    desc: "Expert oversight for your critical workloads. Regular patching, security hardening, and architecture reviews.",
+    icon: Activity,
+  },
+  // 5. Cloudflare (Defense - 1 col)
+  {
+    span: "md:col-span-1",
+    title: "Cloudflare Security",
+    desc: "Enterprise WAF, CDN, and DDoS protection to defend your public-facing assets.",
+    icon: ShieldCheck,
+  },
+  // 6. Pentest (Security - 1 col)
+  {
+    span: "md:col-span-1",
+    title: "Penetration Testing",
+    desc: "Rigorous security validation by certified partners. Identify vulnerabilities before they are exploited.",
     icon: Lock,
   },
+  // 7. Fortinet & GCP (Secondary - 1 col)
   {
     span: "md:col-span-1",
-    title: "Alibaba Cloud",
-    desc: "Premier partner for China-inclusive cloud architecture.",
-    icon: Cloud,
-  },
-  {
-    span: "md:col-span-1",
-    title: "Google Cloud",
-    desc: "GCP procurement and specialized data workload support.",
+    title: "Fortinet & GCP",
+    desc: "Secure hardware networking and Google Cloud data solutions.",
     icon: Zap,
   },
 ];
