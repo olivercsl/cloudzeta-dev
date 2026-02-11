@@ -30,4 +30,4 @@
 ## Contact
 - **Title:** Ready to scale?
 - **Subtitle:** Let's discuss your infrastructure needs.
-- **Email:** <a href="mailto:hello@cloudzeta.solutions" class="text-tx-primary hover:text-accent font-medium">hello@cloudzeta.solutions</a>
+- **Email:** <a href="mailto:info@cloudzeta.solutions" class="text-tx-primary hover:text-accent font-medium">info@cloudzeta.solutions</a>
