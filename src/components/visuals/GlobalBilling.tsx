@@ -34,7 +34,7 @@ export const GlobalBilling = () => {
            <div className="space-y-3">
              <div className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 transition-colors">
                <div className="flex items-center gap-3">
-                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" className="h-4 w-auto grayscale opacity-80" alt="AWS" />
+                 <img src="/assets/aws-logo.png" className="h-5 w-auto grayscale opacity-80" alt="AWS" />
                  <span className="text-sm text-gray-700">AWS Infrastructure</span>
                </div>
                <span className="text-sm font-medium text-gray-900">$4,250.00</span>
@@ -42,7 +42,7 @@ export const GlobalBilling = () => {
 
              <div className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 transition-colors">
                <div className="flex items-center gap-3">
-                 <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" className="h-4 w-auto grayscale opacity-80" alt="Azure" />
+                 <img src="/assets/microsoft.png" className="h-5 w-auto grayscale opacity-80" alt="Azure" />
                  <span className="text-sm text-gray-700">Azure Services</span>
                </div>
                <span className="text-sm font-medium text-gray-900">$2,100.00</span>
@@ -50,7 +50,7 @@ export const GlobalBilling = () => {
 
              <div className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50 transition-colors">
                <div className="flex items-center gap-3">
-                 <img src="https://cloudzeta.solutions/assets/alibaba_l.png" className="h-4 w-auto grayscale opacity-80" alt="Alibaba" />
+                 <img src="/assets/alibaba_l.png" className="h-5 w-auto grayscale opacity-80" alt="Alibaba" />
                  <span className="text-sm text-gray-700">Alibaba Cloud</span>
                </div>
                <span className="text-sm font-medium text-gray-900">$1,850.00</span>
