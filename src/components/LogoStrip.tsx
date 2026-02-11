@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const logos = [
-  { name: "AWS", url: "/assets/aws.png" },
+  { name: "AWS", url: "/assets/aws-logo.png" },
   { name: "Alibaba Cloud", url: "/assets/alibaba_l.png" },
   { name: "Microsoft", url: "/assets/microsoft.png" },
   { name: "Cloudflare", url: "/assets/cloudflare.png" },
