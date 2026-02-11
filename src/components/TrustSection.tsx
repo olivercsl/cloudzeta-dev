@@ -63,13 +63,13 @@ export const TrustSection = () => {
             className="text-center md:text-left p-6 rounded-2xl bg-white/50 border border-white/60 shadow-sm"
           >
             <div className="text-4xl font-bold text-tx-primary mb-3 tracking-tight">
-              100% Owned
+              The Right Fit
             </div>
             <div className="text-sm font-semibold text-gray-900 uppercase tracking-wide mb-2">
-              Full IP Handover
+              Strategic Selection
             </div>
             <p className="text-sm text-tx-secondary leading-relaxed">
-              You own every line of Infrastructure-as-Code. No black boxes, no vendor lock-in.
+              We cut through the noise to identify the single solution most suitable for your business.
             </p>
           </motion.div>
 
