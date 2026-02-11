@@ -40,8 +40,8 @@ export const HeroDashboard = () => {
               {/* Competitor */}
               <div>
                  <div className="flex justify-between text-xs font-medium text-gray-500 mb-1">
-                    <span>GPT-4o / Sonnet</span>
-                    <span>$2.50+</span>
+                    <span>Claude 3.5 Sonnet</span>
+                    <span>$3.00</span>
                  </div>
                  <div className="h-3 w-full bg-gray-100 rounded-full overflow-hidden">
                     <motion.div 
@@ -57,12 +57,12 @@ export const HeroDashboard = () => {
               <div>
                  <div className="flex justify-between text-xs font-medium text-gray-900 mb-1">
                     <span className="text-purple-700 font-bold">Cloudzeta Qwen3</span>
-                    <span className="text-purple-700 font-bold">$0.30</span>
+                    <span className="text-purple-700 font-bold">$0.40</span>
                  </div>
                  <div className="h-3 w-full bg-purple-50 rounded-full overflow-hidden">
                     <motion.div 
                       initial={{ width: 0 }}
-                      whileInView={{ width: "12%" }}
+                      whileInView={{ width: "13%" }}
                       transition={{ duration: 1, delay: 0.5 }}
                       className="h-full bg-gradient-to-r from-purple-500 to-indigo-500"
                     />
@@ -72,7 +72,7 @@ export const HeroDashboard = () => {
 
            <div className="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between">
               <span className="text-xs text-gray-500">Savings</span>
-              <span className="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-lg">88% Lower Cost</span>
+              <span className="text-sm font-bold text-green-600 bg-green-50 px-2 py-1 rounded-lg">87% Lower Cost</span>
            </div>
         </motion.div>
 
