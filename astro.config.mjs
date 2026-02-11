@@ -6,7 +6,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://dev123.cloudzeta.solutions',
+  site: 'https://dev.cloudzeta.solutions',
   vite: {
     plugins: [tailwindcss()]
   },

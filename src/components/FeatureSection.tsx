@@ -42,7 +42,7 @@ export const FeatureSection = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="relative h-[500px] bg-surface rounded-3xl overflow-hidden shadow-2xl border border-black/5"
+            className="relative h-[500px]"
           >
              <ChinaDashboard />
           </motion.div>
@@ -55,7 +55,7 @@ export const FeatureSection = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            className="order-2 md:order-1 relative h-[500px] bg-surface rounded-3xl overflow-hidden shadow-2xl border border-black/5"
+            className="order-2 md:order-1 relative h-[500px]"
           >
              <BillingTrends />
           </motion.div>
@@ -74,10 +74,10 @@ export const FeatureSection = () => {
               Unified Cloud Procurement.
             </h2>
             <p class="text-xl text-tx-secondary leading-relaxed mb-8">
-              Consolidate your AWS, Azure, and Alibaba Cloud spend. We handle the complexity of multi-vendor billing so you get a single, clear invoice with expert remote support.
+              Consolidate your AWS, Azure, and Alibaba Cloud spend. We handle the complexity of multi-vendor billing so you get a single, clear invoice with expert support.
             </p>
             <ul class="space-y-4 mb-8">
-              {['Single currency invoice', 'Expert remote support', 'Cost visibility'].map((item, i) => (
+              {['Single currency invoice', 'Expert support', 'Cost visibility'].map((item, i) => (
                 <li key={i} class="flex items-center gap-3 text-tx-primary font-medium">
                   <svg className="w-5 h-5 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
                   {item}

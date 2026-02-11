@@ -20,7 +20,11 @@ export const LogoStrip = () => {
               key={i} 
               src={logo.url} 
               alt={logo.name} 
-              className="h-8 md:h-10 w-auto object-contain transition-transform duration-300 hover:scale-125 cursor-pointer"
+              className={`object-contain transition-transform duration-300 hover:scale-125 cursor-pointer ${
+                logo.name === "Microsoft" 
+                  ? "h-17 md:h-21 w-auto" 
+                  : "h-8 md:h-10 w-auto"
+              }`}
             />
           ))}
         </div>
