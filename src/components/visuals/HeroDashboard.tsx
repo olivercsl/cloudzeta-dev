@@ -19,14 +19,14 @@ const modelRows = [
     input: '$1.20',
     output: '$6.00',
     type: 'primary' as const,
-    badge: 'Best Value',
+    badge: 'Flagship',
   },
   {
     model: 'qwen3.5-plus',
     input: '$0.40',
     output: '$2.40',
     type: 'reference' as const,
-    badge: 'Cheapest',
+    badge: 'Execution',
   },
 ];
 
