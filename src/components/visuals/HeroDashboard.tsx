@@ -15,18 +15,18 @@ const modelRows = [
     type: 'benchmark' as const,
   },
   {
-    model: 'Cloudzeta Qwen3 Max',
+    model: 'qwen3-max',
     input: '$1.20',
     output: '$6.00',
     type: 'primary' as const,
-    badge: 'Managed Best Value',
+    badge: 'Best Value',
   },
   {
-    model: 'Qwen3.5-Plus (Alibaba)',
+    model: 'qwen3.5-plus',
     input: '$0.40',
     output: '$2.40',
     type: 'reference' as const,
-    badge: 'Portal Baseline',
+    badge: 'Direct Price',
   },
 ];
 
@@ -120,12 +120,12 @@ export const HeroDashboard = () => {
           </div>
 
           <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
-            <span className="text-xs text-gray-500">Cloudzeta Qwen3 Max vs GPT-5/Gemini</span>
+            <span className="text-xs text-gray-500">qwen3-max vs GPT-5/Gemini</span>
             <span className="text-sm font-bold text-green-700 bg-green-50 px-2 py-1 rounded-lg">40% Lower Output Cost</span>
           </div>
 
           <div className="mt-3 text-[11px] text-gray-500 leading-relaxed">
-            Pricing shown in USD per 1M tokens. Alibaba Qwen3.5-Plus row represents direct portal baseline pricing.
+            Pricing shown in USD per 1M tokens.
           </div>
         </motion.div>
       </motion.div>
