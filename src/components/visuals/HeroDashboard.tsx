@@ -26,7 +26,7 @@ const modelRows = [
     input: '$0.40',
     output: '$2.40',
     type: 'reference' as const,
-    badge: 'Direct Price',
+    badge: 'Cheapest',
   },
 ];
 
@@ -119,13 +119,19 @@ export const HeroDashboard = () => {
             })}
           </div>
 
-          <div className="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
-            <span className="text-xs text-gray-500">qwen3-max vs GPT-5/Gemini</span>
-            <span className="text-sm font-bold text-green-700 bg-green-50 px-2 py-1 rounded-lg">40% Lower Output Cost</span>
+          <div className="mt-4 pt-4 border-t border-gray-100 space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="text-xs text-gray-500">qwen3-max vs GPT-5/Gemini</span>
+              <span className="text-sm font-bold text-green-700 bg-green-50 px-2 py-1 rounded-lg">40% Lower Output Cost</span>
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="text-xs text-gray-500">qwen3.5-plus vs Claude Sonnet 4.5</span>
+              <span className="text-sm font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded-lg">~84% Lower Cost</span>
+            </div>
           </div>
 
           <div className="mt-3 text-[11px] text-gray-500 leading-relaxed">
-            Pricing shown in USD per 1M tokens.
+            Pricing shown in USD per 1M tokens. Use Claude for architecture and qwen3.5-plus for execution-heavy labor.
           </div>
         </motion.div>
       </motion.div>
