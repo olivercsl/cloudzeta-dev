@@ -4,19 +4,27 @@ import { motion } from 'framer-motion';
 const modelRows = [
   {
     model: 'anthropic/claude-sonnet-4.6 (1M context)',
+    input: '$3.00',
+    output: '$15.00',
     type: 'benchmark' as const,
   },
   {
     model: 'Google Gemini 3.1 Pro Preview (1.05M context)',
+    input: '$2.00',
+    output: '$12.00',
     type: 'benchmark' as const,
   },
   {
     model: 'qwen3-max',
+    input: '$1.20',
+    output: '$6.00',
     type: 'primary' as const,
     badge: 'Flagship',
   },
   {
     model: 'qwen3.5-plus',
+    input: '$0.40',
+    output: '$2.40',
     type: 'reference' as const,
     badge: 'Execution',
   },
@@ -45,7 +53,7 @@ export const HeroDashboard = () => {
           <div className="flex justify-between items-start mb-5 gap-3">
             <div>
               <div className="text-xs font-bold text-gray-400 uppercase tracking-wider">AI Model Comparison</div>
-              <div className="text-lg font-bold text-gray-900">Fast Models for Agent Workflows</div>
+              <div className="text-lg font-bold text-gray-900">Powerful AI, Transparent Pricing</div>
             </div>
             <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 shrink-0">
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -55,8 +63,10 @@ export const HeroDashboard = () => {
           </div>
 
           <div className="rounded-xl border border-gray-100 overflow-hidden">
-            <div className="bg-gray-50/80 px-3 py-2 text-[11px] font-bold tracking-wider uppercase text-gray-500">
-              Model
+            <div className="grid grid-cols-[1.8fr_1fr_1fr] bg-gray-50/80 px-3 py-2 text-[11px] font-bold tracking-wider uppercase text-gray-500">
+              <span>Model</span>
+              <span className="text-right">Input</span>
+              <span className="text-right">Output</span>
             </div>
 
             {modelRows.map((row, index) => {
@@ -69,7 +79,7 @@ export const HeroDashboard = () => {
                   initial={{ opacity: 0, y: 8 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.35, delay: 0.2 + index * 0.06 }}
-                  className={`px-3 py-3 text-sm border-t border-gray-100 ${
+                  className={`grid grid-cols-[1.8fr_1fr_1fr] px-3 py-3 text-sm border-t border-gray-100 items-center ${
                     isPrimary
                       ? 'bg-gradient-to-r from-purple-50 to-indigo-50'
                       : isReference
@@ -95,13 +105,31 @@ export const HeroDashboard = () => {
                       </span>
                     )}
                   </div>
+
+                  <span className={`text-right font-semibold ${isPrimary ? 'text-purple-700' : isReference ? 'text-emerald-700' : 'text-gray-700'}`}>
+                    {row.input}
+                  </span>
+                  <span className={`text-right font-semibold ${isPrimary ? 'text-purple-700' : isReference ? 'text-emerald-700' : 'text-gray-700'}`}>
+                    {row.output}
+                  </span>
                 </motion.div>
               );
             })}
           </div>
 
+          <div className="mt-4 pt-4 border-t border-gray-100 space-y-2">
+            <div className="flex items-center justify-between">
+              <span className="text-xs text-gray-500">qwen3-max vs Gemini 3.1 Pro Preview (output)</span>
+              <span className="text-sm font-bold text-green-700 bg-green-50 px-2 py-1 rounded-lg">50% Lower Output Cost</span>
+            </div>
+            <div className="flex items-center justify-between">
+              <span className="text-xs text-gray-500">qwen3.5-plus vs Claude Sonnet 4.6</span>
+              <span className="text-sm font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded-lg">~84% Lower Cost</span>
+            </div>
+          </div>
+
           <div className="mt-3 text-[11px] text-gray-500 leading-relaxed">
-            Curated model lineup for high-throughput agent execution.
+            Pricing shown in USD per 1M tokens. Gemini 3.1 Pro Preview audio pricing: $2.00 per 1M audio tokens.
           </div>
         </motion.div>
       </motion.div>
