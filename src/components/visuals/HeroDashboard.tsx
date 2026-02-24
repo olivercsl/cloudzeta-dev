@@ -3,30 +3,17 @@ import { motion } from 'framer-motion';
 
 const modelRows = [
   {
-    model: 'Claude Sonnet 4.5',
+    model: 'anthropic/claude-sonnet-4.6 (1M context)',
     input: '$3.00',
     output: '$15.00',
     type: 'benchmark' as const,
   },
   {
-    model: 'GPT-5 / Gemini 2.5',
-    input: '$1.25',
-    output: '$10.00',
-    type: 'benchmark' as const,
-  },
-  {
-    model: 'qwen3-max',
-    input: '$1.20',
-    output: '$6.00',
+    model: 'Google Gemini 3.1 Pro Preview (1.05M context)',
+    input: '$2.00',
+    output: '$12.00',
     type: 'primary' as const,
-    badge: 'Flagship',
-  },
-  {
-    model: 'qwen3.5-plus',
-    input: '$0.40',
-    output: '$2.40',
-    type: 'reference' as const,
-    badge: 'Execution',
+    badge: 'Updated',
   },
 ];
 
@@ -121,17 +108,17 @@ export const HeroDashboard = () => {
 
           <div className="mt-4 pt-4 border-t border-gray-100 space-y-2">
             <div className="flex items-center justify-between">
-              <span className="text-xs text-gray-500">qwen3-max vs GPT-5/Gemini</span>
-              <span className="text-sm font-bold text-green-700 bg-green-50 px-2 py-1 rounded-lg">40% Lower Output Cost</span>
+              <span className="text-xs text-gray-500">Gemini 3.1 Pro Preview vs Claude Sonnet 4.6 (Input)</span>
+              <span className="text-sm font-bold text-green-700 bg-green-50 px-2 py-1 rounded-lg">33% Lower Input Cost</span>
             </div>
             <div className="flex items-center justify-between">
-              <span className="text-xs text-gray-500">qwen3.5-plus vs Claude Sonnet 4.5</span>
-              <span className="text-sm font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded-lg">~84% Lower Cost</span>
+              <span className="text-xs text-gray-500">Gemini 3.1 Pro Preview vs Claude Sonnet 4.6 (Output)</span>
+              <span className="text-sm font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded-lg">20% Lower Output Cost</span>
             </div>
           </div>
 
           <div className="mt-3 text-[11px] text-gray-500 leading-relaxed">
-            Pricing shown in USD per 1M tokens. Use Claude for architecture and qwen3.5-plus for execution-heavy labor.
+            Pricing shown in USD per 1M tokens. Gemini 3.1 Pro Preview audio pricing: $2.00 per 1M audio tokens.
           </div>
         </motion.div>
       </motion.div>
