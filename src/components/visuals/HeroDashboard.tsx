@@ -3,13 +3,13 @@ import { motion } from 'framer-motion';
 
 const modelRows = [
   {
-    model: 'anthropic/claude-sonnet-4.6 (1M context)',
+    model: 'Claude Sonnet 4.6',
     input: '$3.00',
     output: '$15.00',
     type: 'benchmark' as const,
   },
   {
-    model: 'Google Gemini 3.1 Pro Preview (1.05M context)',
+    model: 'Gemini 3.1 Pro',
     input: '$2.00',
     output: '$12.00',
     type: 'benchmark' as const,
@@ -87,9 +87,9 @@ export const HeroDashboard = () => {
                       : 'bg-white/90'
                   }`}
                 >
-                  <div className="flex items-center gap-2 min-w-0">
+                  <div className="flex items-center gap-2 min-w-0 flex-wrap md:flex-nowrap">
                     <span
-                      className={`truncate ${
+                      className={`text-[13px] leading-tight whitespace-nowrap ${
                         isPrimary ? 'text-purple-700 font-bold' : isReference ? 'text-emerald-700 font-semibold' : 'text-gray-800 font-medium'
                       }`}
                     >
@@ -118,18 +118,20 @@ export const HeroDashboard = () => {
           </div>
 
           <div className="mt-4 pt-4 border-t border-gray-100 space-y-2">
-            <div className="flex items-center justify-between">
-              <span className="text-xs text-gray-500">qwen3-max vs Gemini 3.1 Pro Preview (output)</span>
-              <span className="text-sm font-bold text-green-700 bg-green-50 px-2 py-1 rounded-lg">50% Lower Output Cost</span>
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
+              <span className="text-xs text-gray-500">qwen3-max vs Gemini 3.1 Pro (output)</span>
+              <span className="text-sm font-bold text-green-700 bg-green-50 px-2 py-1 rounded-lg w-fit">50% Lower Output Cost</span>
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
               <span className="text-xs text-gray-500">qwen3.5-plus vs Claude Sonnet 4.6</span>
-              <span className="text-sm font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded-lg">~84% Lower Cost</span>
+              <span className="text-sm font-bold text-emerald-700 bg-emerald-50 px-2 py-1 rounded-lg w-fit">~84% Lower Cost</span>
             </div>
           </div>
 
-          <div className="mt-3 text-[11px] text-gray-500 leading-relaxed">
-            Pricing shown in USD per 1M tokens. Gemini 3.1 Pro Preview audio pricing: $2.00 per 1M audio tokens.
+          <div className="mt-3 text-[11px] text-gray-500 leading-relaxed space-y-1">
+            <p>Pricing shown in USD per 1M tokens.</p>
+            <p>Context windows: Claude Sonnet 4.6 (1M), Gemini 3.1 Pro (1.05M).</p>
+            <p>Gemini 3.1 Pro audio pricing: $2.00 per 1M audio tokens.</p>
           </div>
         </motion.div>
       </motion.div>
